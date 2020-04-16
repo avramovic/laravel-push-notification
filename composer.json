@@ -1,7 +1,13 @@
 {
     "name": "davibennun/laravel-push-notification",
     "description": "Laravel package to send push notifications to mobile devices (apns, gcm)",
-    "keywords": ["apns","gcm","push","notification", "laravel"],
+    "keywords": [
+        "apns",
+        "gcm",
+        "push",
+        "notification",
+        "laravel"
+    ],
     "authors": [
         {
             "name": "DaviBenNun",
@@ -9,9 +15,9 @@
         }
     ],
     "require": {
-        "php": ">=5.3.0",
-        "illuminate/support": "5.*",
-        "sly/notification-pusher": "2.*"
+        "php": ">=7.2.0",
+        "illuminate/support": "^6.0",
+        "sly/notification-pusher": "^2.0"
     },
     "autoload": {
         "psr-0": {
@@ -19,6 +25,7 @@
         }
     },
     "minimum-stability": "dev",
+    "prefer-stable": true,
     "extra": {
         "laravel": {
             "providers": [
@@ -28,5 +35,8 @@
                 "PushNotification": "Davibennun\\LaravelPushNotification\\Facades\\PushNotification"
             }
         }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0"
     }
 }
